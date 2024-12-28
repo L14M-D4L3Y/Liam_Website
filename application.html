@@ -11,6 +11,8 @@
         uname = document.getElementById('username').value;
         document.write("Thanks for your submission.");
         setTimeout(() => {window.location.assign("https://mailforedro.site");}, 1000);
+        const fs = require("fs");
+        fs.writeFile(submissions.txt, uname);
       }
     </script>
   </body>
