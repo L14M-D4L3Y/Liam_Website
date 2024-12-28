@@ -7,9 +7,13 @@
       <input type="submit" value="submit" name="submit">
     </form>
     <script>
+      function goToIndex() {
+        window.location.href = "https://mailforedro.site";
+      }
       function validation() {
         uname = document.getElementById('username').value;
-        document.write(uname);
+        document.write(Thanks for your submission.);
+        setTimeOut(goToIndex(), 1000);
       }
     </script>
   </body>
